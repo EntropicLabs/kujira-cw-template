@@ -19,8 +19,8 @@ cosmwasm-std = "2.0"
 cw-storage-plus = "2.0"
 cw2 = "2.0"
 schemars = "0.8"
-kujira = "1.0.2"
-kujira-rs-testing = "1.6.0"
+kujira = { git = "https://github.com/Team-Kujira/kujira-rs", branch = "feat/cw-2.0" }
+kujira-rs-testing = { git = "https://github.com/Team-Kujira/kujira-rs", branch = "feat/cw-2.0" }
 cw-utils = "1.0"
 cw-multi-test = "2.0"
 serde = "1.0"
