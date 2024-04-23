@@ -1,0 +1,30 @@
+[workspace]
+members = ["contracts/*", "packages/*"]
+resolver = "1"
+
+[profile.release]
+opt-level = 'z'
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'
+incremental = false
+overflow-checks = true
+
+[workspace.dependencies]
+cosmwasm-schema = "2.0"
+cosmwasm-std = "2.0"
+cw-storage-plus = "2.0"
+cw2 = "2.0"
+schemars = "0.8"
+kujira = "1.0.2"
+kujira-rs-testing = "1.6.0"
+cw-utils = "1.0"
+cw-multi-test = "2.0"
+serde = "1.0"
+thiserror = "1"
+
+# Workspace shared members
+template-interfaces = { path = "./packages/template-interfaces" }
